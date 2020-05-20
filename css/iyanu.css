@@ -156,6 +156,7 @@ header{
     font-size : 20px;
 }
 .gal_pics{
+    margin-left : 10%;
     width : 63%;
     margin: auto 200px;
     padding : 2px;
