@@ -324,7 +324,12 @@ hr {
 /*FOOTER ends here */
 
 /* For Ipad-Pro */
-@media screen and (max-width : 1385px){
+@media screen and (max-width : 1024px){
+
+    body{
+        padding : 0px;
+        margin : 0px;
+    }
     .intro-2 {
         grid-column : 1/5;
         grid-row: 1/2;
@@ -335,6 +340,7 @@ hr {
     }
     .gal_pics {
         margin : 30px;
+        margin-left : 8%;
     }
 
    
@@ -345,13 +351,17 @@ hr {
     .logo{
         grid-column : 1/-1;
         grid-row: 1/2;
-        text-align: center;
+        margin-left: 200px;
     }
 
     .logo span {
         font-size : 50px;
     }
 
+    .nav {
+        margin-right : 100px;
+    
+    }
     .sub-con {
         grid-template-columns : repeat(12, 1fr);
         grid-auto-rows: auto;
@@ -370,7 +380,7 @@ hr {
         background-size: contain;
     }
     .gal_pics{
-        margin-left : 8%;
+        margin-left : 10%;
         grid-template-columns: repeat(4, minmax(150px, auto));
         grid-auto-rows: 210px;
     }
@@ -416,3 +426,52 @@ hr {
     grid-auto-rows: auto;
    }
 }
+
+@media screen and (max-width : 415px){
+
+    body {
+        padding : 0px;
+        margin: 0px;
+    }
+
+    .logo{
+        grid-column : 1/-1;
+        grid-row: 1/2;
+        margin-left: 1px;
+    }
+
+    .logo span {
+        font-size : 50px;
+    }
+
+    .nav {
+        grid-column : 1/-1;
+        grid-row: 2/3;
+        padding : 0px;
+        width : 100%;
+    }
+
+    .list {
+        padding : 0px;
+        margin : 0px;
+        list-style: none;
+        font-family: 'Righteous', cursive;
+    }
+    
+    .nav-list {
+        display : inline-block;
+        margin-left : 0px;
+        margin-top : 10px;
+        font-size : 21px;
+        margin-left: 3px;
+        cursor: pointer;
+    }
+    
+    .nav-list:hover{
+        font-size : 20px;
+    }
+
+
+}
+
+
