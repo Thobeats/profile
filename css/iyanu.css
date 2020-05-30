@@ -340,12 +340,8 @@ hr {
         grid-column: 5/-1;
     }
     .gal_pics {
-<<<<<<< HEAD
         margin : 30px;
         margin-left : 8%;
-=======
-        margin : 20%;
->>>>>>> 7831e7c2c47a25ab228cfc0e8d48121ce8e416d1
     }
 
    
@@ -431,7 +427,6 @@ hr {
     grid-auto-rows: auto;
    }
 }
-<<<<<<< HEAD
 
 @media screen and (max-width : 415px){
 
@@ -481,5 +476,3 @@ hr {
 }
 
 
-=======
->>>>>>> 7831e7c2c47a25ab228cfc0e8d48121ce8e416d1
