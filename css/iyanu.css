@@ -1,6 +1,6 @@
 /* My profile CSS */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
 /* BODY */
 
 body{
@@ -77,12 +77,32 @@ header{
 
 /* HEADER ENDS HERE */
 
+/* WELCOME */
+
+#welcome{
+    padding : 10px;
+    margin : 50px;
+}
+
+.welcome {
+    padding : 5px;
+}
+
+.show{
+    font-family: 'Suez One', serif;
+    font-size: 200px;
+    text-align: center;
+}
+
+
+
 
 /* CONTENT-1 STARTS HERE */
 
 #content-1{
     /* background: url(../img/black-computer.jpg); */
     padding: 20px;
+    display: none;
 }
 
 .sub-con {
@@ -139,6 +159,7 @@ header{
 #content-2{
     text-align : center;
     margin : 0px;
+    display: none;
    
 } 
 
@@ -174,6 +195,7 @@ header{
 
 #content-3{
     margin : 80px 0px;
+    display : none;
 }
 
 .pro_h1{
@@ -213,6 +235,7 @@ header{
 
 #content-4{
     padding : 10px;
+    display: none;
 }
 
 .contact-me{

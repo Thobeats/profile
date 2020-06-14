@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
     // var slides = document.getElementsByClassName("slide");
     // var links = document.getElementsByClassName("link");
@@ -44,42 +44,77 @@ $(document).ready(function(){
     // });
 
 
-    $("#content-2").hide();
-    $("#content-3").hide();
-    $("#content-4").hide();
+//     $("#content-2").hide();
+//     $("#content-3").hide();
+//     $("#content-4").hide();
 
-   $("#home").click(function(){
-        $("#content-4").hide();
-        $("#content-2").hide();
-        $("#content-3").hide();
-        $("#content-1").effect("slide", 500);
-   })
-
-   
-   $("#gallery").click(function(){
-       $("#content-4").hide(); 
-       $("#content-1").hide();
-       $("#content-3").hide();
-       $("#content-2").effect("slide", 500);
-   });
-
-   $("#project").click(function(){
-       $("#content-1").hide();
-       $("#content-2").hide();
-       $("#content-4").hide();
-       $("#content-3").effect("slide", 500);
-   });
-
-   $("#contact-me").click(function(){
-        $("#content-1").hide();
-        $("#content-2").hide();
-        $("#content-3").hide();
-        $("#content-4").effect("slide", 500);
-   });
-   
+//    $("#home").click(function(){
+//         $("#content-4").hide();
+//         $("#content-2").hide();
+//         $("#content-3").hide();
+//         $("#content-1").effect("slide", 500);
+//    })
 
    
-});
+//    $("#gallery").click(function(){
+//        $("#content-4").hide(); 
+//        $("#content-1").hide();
+//        $("#content-3").hide();
+//        $("#content-2").effect("slide", 500);
+//    });
+
+//    $("#project").click(function(){
+//        $("#content-1").hide();
+//        $("#content-2").hide();
+//        $("#content-4").hide();
+//        $("#content-3").effect("slide", 500);
+//    });
+
+//    $("#contact-me").click(function(){
+//         $("#content-1").hide();
+//         $("#content-2").hide();
+//         $("#content-3").hide();
+//         $("#content-4").effect("slide", 500);
+//    });
+   
+
+   
+// });
+
+
+window.onload = init;
+
+function init(){
+    let link = document.getElementsByClassName("link");
+
+    for(i = 0; i < link.length; i++){
+
+        var name = [];
+        name.push(link[i].innerHTML);
+  
+        console.log(name);
+          
+        link[i].addEventListener("click", function(){
+  
+          //  alert(this.getAttribute("data-target"));
+          let target = this.getAttribute("data-target");
+  
+          //alert(target.slice(1));
+  
+          var div = document.getElementById("welcome");
+  
+  
+          if (target.slice(1) == "content-1"){
+            div.innerHTML = document.getElementById("content-1").innerHTML;
+          } else {
+            div.innerHTML = document.getElementById(target.slice(1)).innerHTML;  
+          }
+  
+            //target.slice(1); 
+          
+        });
+      }
+}
 
 
 
