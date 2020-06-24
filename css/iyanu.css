@@ -103,6 +103,7 @@ header{
     /* background: url(../img/black-computer.jpg); */
     padding: 20px;
     display: none;
+    animation: fadeIn ease 5s;
 }
 
 .sub-con {
@@ -160,6 +161,7 @@ header{
     text-align : center;
     margin : 0px;
     display: none;
+    animation: fadeIn ease 5s;
    
 } 
 
