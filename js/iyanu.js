@@ -99,16 +99,18 @@ function init(){
           //  alert(this.getAttribute("data-target"));
           let target = this.getAttribute("data-target");
   
-          //alert(target.slice(1));
+          var tab = target.slice(1);
   
           var div = document.getElementById("welcome");
   
   
-          if (target.slice(1) == "content-1"){
-            div.innerHTML = document.getElementById("content-1").innerHTML;
-          } else {
+        //   if (target.slice(1) == "content-1"){
+        //     div.innerHTML = document.getElementById("content-1").innerHTML;
+        //   } else {
+
+           
             div.innerHTML = document.getElementById(target.slice(1)).innerHTML;  
-          }
+        //  }
   
             //target.slice(1); 
           
