@@ -96,11 +96,13 @@ function init(){
           
         link[i].addEventListener("click", function(){
   
-          //  alert(this.getAttribute("data-target"));
+          // get link attribute
           let target = this.getAttribute("data-target");
-  
+
+          // Remove The # character
           var tab = target.slice(1);
-  
+            
+          // Select the welcome div
           var div = document.getElementById("welcome");
   
   
@@ -108,15 +110,23 @@ function init(){
         //     div.innerHTML = document.getElementById("content-1").innerHTML;
         //   } else {
 
-           
-            div.innerHTML = document.getElementById(target.slice(1)).innerHTML;  
+             
+           // div.innerHTML = document.getElementById(target.slice(1)).innerHTML; 
+            
+           $(div).html($("#" + tab ).html()).effect("slide", 1000);
+            
         //  }
   
             //target.slice(1); 
+
+        
           
         });
       }
 }
+
+
+
 
 
 
