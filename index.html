@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -28,7 +29,11 @@
         <div class="header-content">
             <div class="logo">
                 <span><a href="index.html">Iyanu</a></span>
-            </div>       
+            </div>   
+            
+            <div id="linkmenu">
+                <i class="fas fa-bars"></i>
+            </div>
     
             <div class="nav">
                 <ul class="list">
@@ -39,15 +44,32 @@
                     <li class= "nav-list link" id="contact-me" data-target="#content-4">Contact</li>
                 </ul>
             </div>
-        </div>       
+        </div> 
+        
+        
+        <section id="pop">
+            <div class="close"><i class="fas fa-times"></i></div>
+
+            <div class="list">
+                <ul>
+                    <li class= "pop-list" id = "home" data-target="#content-1"><a href="#content-1">My Home</a></li>
+                    <!-- <li class= "nav-list link" id = "gallery" data-target="#content-2">What I can do?</li> -->
+                    <li class= "pop-list" id = "project" data-target="#content-3"><a href="#content-3">Projects</a> </li>
+                    <!-- <li class= "nav-list link" id="">My Hobbies</li> -->
+                    <li class= "pop-list" id="contact-me" data-target="#content-4"><a href="#content-4">Contact</a> </li>
+                </ul>
+            </div>
+
+            
+        </section>
     </header>
 
 
     <section id="welcome">
-        <div class="sub-con">
+        <!-- <div class="sub-con">
             <div class="intro-1">
                 <div class="meet">
-                    <h1>HI!
+                    <h1>HI! 
                         <hr>
                     </h1>
                 </div>
@@ -57,7 +79,7 @@
                         Hi! I am Dayisi Iyanuoluwa Tobi. A Backend developer (PHP), experienced with building Websites, Web Apps, Database, Content Management Systems with
                         PHP/Laravel, Wordpress, MySQL, JavaScript. <br>
                         
-                        <!-- I started coding in 2017, I learnt Python on DataCamp, I participated in various internships like: the HNG 5.0 and 6.0, Andela Google Africa,
+                         I started coding in 2017, I learnt Python on DataCamp, I participated in various internships like: the HNG 5.0 and 6.0, Andela Google Africa,
                         2019 and an onsite internship with First Lincoln Technologies in Nigeria. I have been working as a Backend developer for 2 years now, I work with HTML, CSS, JavaScript,
                         PHP, Node JS, Wordpress, Mysql and Mongo DB.
                         I love good music: Jazz, Funk, Gospel and Blues. I also play drums, alot!. I am open for any gig.                        -->
@@ -77,10 +99,11 @@
             <!-- <div style="width: 500px;">
                 <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FBetaedu-110079190629883&width=600&colorscheme=light&show_faces=true&border_color&stream=true&header=true&height=435" scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:600px; height:430px; background: white; float:left; " allowtransparency="true"></iframe>
                 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I remember back then - before exams, campus fellowships would do WELFARE. My guy <a href="https://twitter.com/Ifyxlord?ref_src=twsrc%5Etfw">@Ifyxlord</a> and I would be on the front-line to receive like homeless kids😂🤟</p>&mdash; XperalBee🇳🇬🇨🇦 (@Bdazzlerx) <a href="https://twitter.com/Bdazzlerx/status/1244997514530521088?ref_src=twsrc%5Etfw">March 31, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div> -->
+            </div> 
 
-        </div>
+        </div> -->
     </section>
+
 
     <section id="content-1">
         <div class="sub-con">
@@ -121,7 +144,7 @@
         </div>
     </section>
 
-    <section id="content-2" class="slide">
+    <section id="content-2">
         <div class="gallery">
             <div class="gal_h1">
                 <h1>My Gallery</h1>
@@ -152,7 +175,7 @@
         </div>
     </section>
 
-    <section id="content-3" class="slide">
+    <section id="content-3">
         <div class="project">
             <div class="pro_h1"> 
                 <h1>My Projects</h1> 
@@ -160,37 +183,52 @@
             <div class="pro">
                 <div class="pro-1 odd">
                     <h2>
+                        <i class="fas fa-balance-scale"></i>
                         <a href="https://www.premiumpartners-law.com/" target="_blank">Premium Partners - Law firm</a>
                     </h2>
                 </div>
                 <div class="pro-2 even">
+                    
                     <h2>
-                        <a href="https://github.com/Thobeats/Team-Nike" target="_blank">Networth Calculator App</a>
+                        <i class="fas fa-calculator"></i>
+                        <a href="https://thobeats.github.io/Team-Nike/" target="_blank">Networth Calculator App</a>
                     </h2>
                 </div>
                 <div class="pro-3 odd">
                     <h2>
-                        <a href="https://github.com/Thobeats/oslodiner" target="_blank">Oslo Diner</a>
+                        <i class="fas fa-utensils"></i>                        
+                        <a href="https://thobeats.github.io/oslodiner/" target="_blank">Oslo Diner</a>
                     </h2>
                 </div>
                 <div class="pro-4 even">
                     <h2>
+                        <i>API</i>
                         <a href="https://github.com/Thobeats/ATG-tsk" target="_blank">ATG Signup and Login endpoint</a>
                     </h2>
                 </div>
                 <div class="pro-5 odd">
                     <h2>
+                        <i class="fas fa-first-aid"></i>
                         <a href="https://github.com/Thobeats/Aniedi-Clan-Backend-PHP" target="_blank">Health System App</a>                    
                     </h2>
                 </div>
                 <div class="pro-6 even">
                     <h2>
-                        <a href="https://github.com/Thobeats/HSV" target="_blank">API endpoints for HSV Media</a>
+                        <i>API</i>
+                        <a href="https://github.com/Thobeats/HSV" target="_blank">Endpoints for HSV Media</a>
                     </h2>
                 </div>
                 <div class="pro-5 odd">
+
                     <h2>
-                        <a href="https://Betaedu.co" target="_blank">Betaedu</a>                    
+                        <i class="fas fa-book-reader"></i>                         
+                        <a href="https://Betaedu.co" target="_blank">Online Tutors</a>                    
+                    </h2>
+                </div>
+                <div class="pro-6 even">
+                    <h2>
+                        <i class="fas fa-users"></i>
+                        <a href="https://customerpay.me/" target="_blank">My Customer</a>
                     </h2>
                 </div>
 
@@ -258,7 +296,7 @@
                 <li class="footer-list">Christian  <i class="fas fa-bible"></i>,</li>
                 <li class="footer-list">Web Developer  <i class="fas fa-code"></i>,</li>
                 <li class="footer-list">Civil Engineer  <i class="fas fa-hard-hat"></i></li>
-                <li class="footer-list">and Drummer  <i class="fas fa-drum"></i></li>
+                <li class="footer-list">Drummer  <i class="fas fa-drum"></i></li>
             </ul>
         </div>
 
